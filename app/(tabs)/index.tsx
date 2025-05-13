@@ -22,6 +22,7 @@ export default function Index() {
   };
   return (
     <View style={styles.container}>
+      <Text> style={styles.text} Seja membro.</Text>
       <View style={styles.imageContainer}>
         <Text style={styles.text}>A lua revela o que está além</Text>        
         <ImageViewer imgSource={PlaceholderImage}/>

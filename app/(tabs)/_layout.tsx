@@ -1,9 +1,7 @@
 
-import { Tabs } from "expo-router";
+import { Tabs } from 'expo-router';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import AntDesign from '@expo/vector-icons/AntDesign';
-import Feather from '@expo/vector-icons/Feather';
-
 
 export default function TabLayout() {
   return (
@@ -11,13 +9,13 @@ export default function TabLayout() {
     screenOptions={{
         tabBarActiveTintColor: '#5087d4',
         headerStyle:{
-        backgroundColor:'#1B1F4A'
+        backgroundColor:'#1B1F4A',
         },
         headerShadowVisible: false,
         headerTintColor:'#fff',
         tabBarStyle:{
-        backgroundColor:'#1B1F4A'
-        }
+        backgroundColor:'#1B1F4A',
+        },
 
     }}
     >
@@ -45,8 +43,8 @@ export default function TabLayout() {
     options={{
         title: 'Discoveries',
         tabBarIcon: ({ color, focused}) =>  (
-           <AntDesign name={focused ? 'circledown' : 'circledowno'} color={color} size={24}/> 
-        ),
+           <AntDesign
+             name={focused ? 'circledown' : 'circledowno'} color={color} size={24}/> 
     }}
     />
   </Tabs>
