@@ -3,6 +3,7 @@ import { Tabs } from 'expo-router';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import AntDesign from '@expo/vector-icons/AntDesign';
 
+
 export default function TabLayout() {
     return (
         <Tabs
@@ -22,7 +23,7 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    title: 'Home',
+                    title: 'Início',
                     tabBarIcon: ({ color, focused }) => (
                         <Ionicons name={focused ? 'moon' : 'moon-outline'} color={color} size={24} />
                     ),
@@ -31,7 +32,7 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="about"
                 options={{
-                    title: 'About',
+                    title: 'Sobre',
                     tabBarIcon: ({ color, focused }) => (
                         <Ionicons name={focused ? 'settings' : 'settings-outline'} color={color} size={24} />
                     ),
@@ -41,10 +42,20 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="toDoList"
                 options={{
-                    title: 'Discoveries',
+                    title: 'Descobertas',
                     tabBarIcon: ({ color, focused }) => (
                         <AntDesign
                             name={focused ? 'circledown' : 'circledowno'} color={color} size={24} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="buscaCEP"
+                options={{
+                    title: 'CEP',
+                    tabBarIcon: ({ color, focused }) => (
+                        <Ionicons
+                            name={focused ? 'location-outline' : 'location-sharp'} color={color} size={24} />
                     ),
                 }}
             />

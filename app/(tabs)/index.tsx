@@ -44,7 +44,7 @@ export default function Index() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Text style={styles.text}>A lua revela o que está além</Text>
-        <ImageViewer imgSource={PlaceholderImage} />
+        <ImageViewer imgSource={PlaceholderImage} selectedImage={selectedImage}/>
       </View>
       {showAppOptions ? (
 
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 25,
     fontFamily: "Dancing Script"
   },
   image: {
@@ -89,5 +89,15 @@ const styles = StyleSheet.create({
   footerContainer: {
     flex: 1 / 3,
     alignItems: 'center',
-  }
+  },
+
+  optionsContainer:{
+    position: 'absolute',
+    bottom: 80,
+  },
+  optionsRow: {
+    alignItems : 'center',
+    flexDirection : 'row',
+  },
+
 });

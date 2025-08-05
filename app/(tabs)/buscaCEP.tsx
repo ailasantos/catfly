@@ -7,7 +7,7 @@ export default function BuscaCEP() {
 return ( 
         
     <View style={styles.container}> 
-        <Text>Consulte seu CEP</Text> 
+        <Text style={{ color: '#fff'}}>Consulte seu CEP</Text> 
 
     
         <TextInput 
@@ -16,7 +16,8 @@ return (
         onChangeText={setCep}
         placeholder = "Digite o CEP" 
         keyboardType="numeric"
-        
+        placeholderTextColor="white" 
+                 
         />
 
         <Text>{cep}</Text> 
@@ -24,16 +25,22 @@ return (
         <Button 
             title="Buscar" 
             onPress={buscarCEP} 
+            
+            
+
+            
 /> 
 
-    {endereco.logradouro !=='' && ( 
-        <View style={styles.result}> 
-         <Text>Logradouro: {endereco.logradouro}</Text> 
-         <Text>Bairro: {endereco.bairro}</Text> 
-         <Text>Cidade: {endereco.localidade}</Text> 
-         <Text>Estado: {endereco.uf}</Text> 
-         </View> 
+
+ {endereco.logradouro !== '' && ( 
+  <View style={styles.result}> 
+    <Text style={{ color: 'white' }}>Logradouro: {endereco.logradouro}</Text> 
+    <Text style={{ color: 'white' }}>Bairro: {endereco.bairro}</Text> 
+    <Text style={{ color: 'white' }}>Cidade: {endereco.localidade}</Text> 
+    <Text style={{ color: 'white' }}>Estado: {endereco.uf}</Text> 
+  </View> 
 )}
+
 </View> 
 ); 
 }
