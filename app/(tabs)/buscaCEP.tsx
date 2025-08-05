@@ -20,9 +20,8 @@ return (
                  
         />
 
-        <Text>{cep}</Text> 
-
         <Button 
+            color='#5087d4'
             title="Buscar" 
             onPress={buscarCEP} 
             
@@ -58,6 +57,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray', 
     padding: 8, 
     marginVertical: 10,
+    color:'#fff',
   },
    
     result: {

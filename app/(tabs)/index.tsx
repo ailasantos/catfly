@@ -7,7 +7,7 @@ import {useState} from "react";
 import IconButton from "@/components/IconButton";
 import CircleButton from "@/components/CircleButton";
 
-const PlaceholderImage = require('@/assets/images/lu.jpg');
+const PlaceholderImage = require('@/assets/images/luabrilhante.jpg');
 
 export default function Index() {
   const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
